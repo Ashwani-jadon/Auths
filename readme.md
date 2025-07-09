@@ -95,4 +95,4 @@ npm run dev
 📄 License
 This project is licensed under the MIT License.
 
-<p align="center"> Built with ❤️ by <a href="https://github.com/your-username">Your Name</a> </p> ```
+<p align="center"> Built with ❤️ by <a href="https://github.com/your-username">Your Name</a> </p>
