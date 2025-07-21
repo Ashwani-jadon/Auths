@@ -1,4 +1,5 @@
 import jwt from "jsonwebtoken";
+import crypto from "crypto";
 // Generate 6-digit token
 export const verificationToken = () =>Math.floor(100000 + Math.random() * 900000).toString();
 
@@ -22,3 +23,7 @@ export const generateTokenAndSetCookies = (res, userId) => {
 
   return token; // optional, if you want to use it on frontend
 };
+
+export const getResetToken =()=> crypto.randomBytes(20).toString('hex');
+
+export const getResetTokenExpiresAt =()=> Date.now() +  1*60*60*1000;  //1 hour time
